@@ -19,13 +19,13 @@ export default function DataTable() {
   // Inicializar el estado con datos de prueba
   const [leads, setLeads] = useState<Data[]>([
     {
-      id: 1,
+      id: "uuid",
       name: "Juan Pérez",
       email: "juan@example.com",
       phone: "123456789",
     },
     {
-      id: 2,
+      id: "UUID2",
       name: "María Gómez",
       email: "maria@example.com",
       phone: "987654321",
