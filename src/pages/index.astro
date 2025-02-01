@@ -1,15 +1,21 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+
+import LoginForm from "../components/LoginForm";
 import "../styles/global.css";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
-  <h1 class="text-3xl font-bold underline color-blue">
-  Hello world!
-</h1>
-</Layout>
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Login</title>
+  </head>
+  <body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <h1>Iniciar Sesión</h1>
+    <LoginForm client:load />
+  </body>
+</html>
